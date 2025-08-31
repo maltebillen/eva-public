@@ -1,0 +1,4 @@
+Id,LocationId,Capacity,ChargingSpeedVolts,ChargingSpeedAmps
+0,1,8,1000,400
+1,5,5,1000,400
+2,9,4,1000,400

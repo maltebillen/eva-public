@@ -1,0 +1,5 @@
+VehicleID,InRotation,CostVehicle,CostDeadleg,CostMaintenance,DistDeadlegsKm,DistAvgBetweenMaintenance,DistStdBetweenMaintenance,SOClb,SOCub,SecondsIdle,SecondsProductive,SecondsMaintenance,SecondsCharging
+0,1,5000,440,5865.91,20,667.5,84.5,38,229,73320,114000,19200,48600
+1,1,5000,470,5395.18,30,546,164.495,38,250,55320,114000,28800,51900
+2,1,5000,280,1974.53,20,491.5,99.5,38,245,56280,57000,19200,26100
+3,1,5000,330,5795.18,10,942,0,38,246,68760,91200,9600,41100

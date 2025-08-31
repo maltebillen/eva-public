@@ -1,0 +1,159 @@
+{
+  "paramsConfig": [
+    {
+      "name": "DATE_START",
+      "datatype": "datetime",
+      "values": [ "2025-03-01 00:00:00+00:00" ]
+    },
+    {
+      "name": "DATE_END",
+      "datatype": "datetime",
+      "values": [ "2025-03-04 12:00:00+00:00" ]
+    },
+    {
+      "name": "CONST_PLANNING_HORIZON_LENGTH",
+      "datatype": "uint",
+      "values": [ 21600 ]
+    },
+    {
+      "name": "CONST_PLANNING_HORIZON_OVERLAP",
+      "datatype": "uint",
+      "values": [ 64800 ]
+    },
+    {
+      "name": "CONST_PUT_VEHICLE_ON_CHARGE",
+      "datatype": "uint",
+      "values": [ 300 ]
+    },
+    {
+      "name": "CONST_TAKE_VEHICLE_OFF_CHARGE",
+      "datatype": "uint",
+      "values": [ 300 ]
+    },
+    {
+      "name": "CONST_CHARGER_CAPACITY_CHECK",
+      "datatype": "uint",
+      "values": [ 300 ]
+    },
+    {
+      "name": "CONST_LINEAR_OPTIMALITY_GAP",
+      "datatype": "double",
+      "values": [ 0.005 ]
+    },
+    {
+      "name": "CONST_INTEGER_OPTIMALITY_GAP",
+      "datatype": "double",
+      "values": [ 0.01 ]
+    },
+    {
+      "name": "CONST_FRAC_THRESHOLD_TRUNC_CG",
+      "datatype": "double",
+      "values": [ 0.8 ]
+    },
+    {
+      "name": "CONST_COLUMN_GENERATION_TIMELIMIT",
+      "datatype": "uint",
+      "values": [ 3600 ]
+    },
+    {
+      "name": "CONST_BRANCH_AND_PRICE_TIMELIMIT",
+      "datatype": "uint",
+      "values": [ 3600 ]
+    },
+    {
+      "name": "CONST_NR_THREADS",
+      "datatype": "uint",
+      "values": [ 8 ]
+    },
+    {
+      "name": "CONST_NR_COLS_PER_VEHICLE_ITER",
+      "datatype": "uint",
+      "values": [ 75 ]
+    },
+    {
+      "name": "CONST_NTH_ITER_SOLVE_ALL",
+      "datatype": "uint",
+      "values": [ 0 ]
+    },
+    {
+      "name": "CONST_NTH_BRANCHING_NODE_DIVE",
+      "datatype": "uint",
+      "values": [ 5 ]
+    },
+    {
+      "name": "CONST_MAX_NUMBER_COLS_MP",
+      "datatype": "uint",
+      "values": [ 7500 ]
+    },
+    {
+      "name": "CONST_MAX_NUMBER_COLS_MP_POOL",
+      "datatype": "uint",
+      "values": [ 30000 ]
+    },
+    {
+      "name": "CONST_MAX_NUMBER_FIRST_TIER_EVAL_STRONG_BRANCHING",
+      "datatype": "uint",
+      "values": [ 12 ]
+    },
+    {
+      "name": "CONST_MAX_NUMBER_SECOND_TIER_EVAL_STRONG_BRANCHING",
+      "datatype": "uint",
+      "values": [ 3 ]
+    },
+    {
+      "name": "CONST_CODE_ALGORITHM_TYPE",
+      "datatype": "uint",
+      "values": [ 3,4,5 ]
+    },
+    {
+      "name": "CONST_CODE_PRICING_PROBLEM_TYPE",
+      "datatype": "uint",
+      "values": [ 1,2 ]
+    },
+    {
+      "name": "FLAG_MINIMISE_NUMBER_VEHICLES",
+      "datatype": "bool",
+      "values": [ true ]
+    },
+    {
+      "name": "FLAG_USE_MODEL_CLEANUP",
+      "datatype": "bool",
+      "values": [ true ]
+    },
+    {
+      "name": "FLAG_INTERIM_SOLVE_ALL_VEHICLES",
+      "datatype": "bool",
+      "values": [ false ]
+    },
+    {
+      "name": "FLAG_ALLOW_DEADLEGS",
+      "datatype": "bool",
+      "values": [ false ]
+    },
+    {
+      "name": "FLAG_TERMINATE_AFTER_ROOT",
+      "datatype": "bool",
+      "values": [ false ]
+    },
+    {
+      "name": "COST_DEADLEG_FIX",
+      "datatype": "double",
+      "values": [ 10.0 ]
+    },
+    {
+      "name": "COST_DEADLEG_PER_KM",
+      "datatype": "double",
+      "values": [ 4.0 ]
+    },
+    {
+      "name": "COST_COEFFICIENT_PENALTY_MAINTENANCE",
+      "datatype": "double",
+      "values": [ 0.008 ]
+    },
+    {
+      "name": "COST_UNCOVERED_TRIP",
+      "datatype": "double",
+      "values": [ 20000.0 ]
+    }
+  ]
+}

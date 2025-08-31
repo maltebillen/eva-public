@@ -1,0 +1,147 @@
+﻿{
+    "version":8,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 24,
+        "patch": 0
+    },
+    "configurePresets":  [
+    {
+      "name": "windows-base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl.exe",
+        "CMAKE_CXX_COMPILER": "cl.exe"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "x64-debug",
+      "displayName": "x64 Debug",
+      "inherits": "windows-base",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "x64-release",
+      "displayName": "x64 Release",
+      "inherits": "x64-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "x86-debug",
+      "displayName": "x86 Debug",
+      "inherits": "windows-base",
+      "architecture": {
+        "value": "x86",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "x86-release",
+      "displayName": "x86 Release",
+      "inherits": "x86-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "gcc-10",
+        "CMAKE_CXX_COMPILER": "g++-10"
+      },
+      "cmakeExecutable": "$env{HOME}/libs/cmake_3.24/bin/cmake",
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      },
+      "displayName": "Linux Debug",
+      "environment": {},
+      "generator": "Unix Makefiles",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "name": "linux-debug",
+      "vendor": {
+        "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
+          "sourceDir": "$env{HOME}/projects/research/$ms{projectDirName}"
+        },
+        "microsoft.com/VisualStudioSettings/CMake/1.0": {
+          "hostOS": [ "Linux" ]
+        }
+      }
+    },
+    {
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_C_COMPILER": "gcc-10",
+        "CMAKE_CXX_COMPILER": "g++-10"
+      },
+      "cmakeExecutable": "$env{HOME}/libs/cmake_3.24/bin/cmake",
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      },
+      "displayName": "Linux Release",
+      "environment": {},
+      "generator": "Unix Makefiles",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "name": "linux-release",
+      "vendor": {
+        "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
+          "sourceDir": "$env{HOME}/projects/research/$ms{projectDirName}"
+        },
+        "microsoft.com/VisualStudioSettings/CMake/1.0": {
+          "hostOS": [ "Linux" ]
+        }
+      }
+    },
+    {
+      "name":"macOS-debug",
+      "displayName": "macOS-debug",
+      "description": "Build debug version on macOS.",
+      "hidden":false,
+      "generator": "Unix Makefiles",
+      "binaryDir": "${workspaceFolder}/build/debug",
+      "cacheVariables": {
+          "CMAKE_BUILD_TYPE":"Debug",
+          "CMAKE_C_COMPILER":"clang",
+          "CMAKE_CXX_COMPILER":"clang++"
+      }
+    },
+    {
+      "name":"macOS-release",
+      "displayName": "macOS-release",
+      "description": "Build release version on macOS.",
+      "hidden":false,
+      "generator": "Unix Makefiles",
+      "binaryDir": "${workspaceFolder}/build/release",
+      "cacheVariables": {
+          "CMAKE_BUILD_TYPE":"Release",
+          "CMAKE_C_COMPILER":"clang",
+          "CMAKE_CXX_COMPILER":"clang++"
+      }
+    }
+  ]
+}
+

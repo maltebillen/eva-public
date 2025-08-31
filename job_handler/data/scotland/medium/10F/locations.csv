@@ -1,0 +1,9 @@
+Id,Type,Name
+0,Stop,Stop @ DUN
+1,Charger,Charger @ DUN
+2,Maintenance,Maintenance @ DUN
+3,Stop,Stop @ EDI
+4,Stop,Stop @ ABE
+5,Charger,Charger @ ABE
+6,Stop,Stop @ INV
+7,Maintenance,Maintenance @ INV
