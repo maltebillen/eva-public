@@ -117,5 +117,3 @@ The behaviour of the model can be adapted by changing various config parameters.
 | `COST_UNCOVERED_TRIP` | `double` | [0,&infin;] | 20000 | The fixed cost coefficient for an unassigned trip. |
 
 If the python script is used to run the software, the file `runConfig.json` can be updated to modify config values. It allows to add multiple different values for every config parameter. The python script will automatically create all parameter combinations and run all configurations.
-
-# Datasets:
